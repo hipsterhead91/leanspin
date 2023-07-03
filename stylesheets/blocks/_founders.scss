@@ -1,0 +1,81 @@
+.founders {
+  @extend %section;
+  margin-bottom: 98px;
+}
+
+.founders__container {
+  @extend %section-container;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.founders__part-one {
+  box-sizing: border-box;
+  max-width: 568px;
+  padding: 100px 0 16px 0;
+}
+
+.founders__heading {
+  margin: 0 0 40px 0;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 57px;
+  color: $black;
+}
+
+.founders__image-one {
+  width: 100%;
+}
+
+.founders__part-two {
+  max-width: 562px;
+}
+
+.founders__image-two {
+  width: 100%;
+}
+
+.founders__paragraph {
+  max-width: 528px;
+  margin: 50px 0 32px 0;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25.5px;
+  color: $black;
+}
+
+.founders__signs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.founders__signs-align {
+  width: 50%;  
+  display: flex;
+  flex-direction: column;
+}
+
+.founders__sign {
+  min-width: 240px;
+  min-height: 136px;
+}
+
+.founders__name {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.2px;
+  color: $black;
+}
+
+#sign-01 {
+  @include bg-image('../../images/sign-01.png');
+}
+
+#sign-02 {
+  @include bg-image('../../images/sign-02.png');
+}

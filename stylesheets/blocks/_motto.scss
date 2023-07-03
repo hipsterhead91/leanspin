@@ -1,0 +1,39 @@
+.motto {
+  @extend %section;
+  margin-bottom: 160px;
+}
+
+.motto__container {
+  @extend %section-container;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.motto__line {
+  display: flex;
+  flex-direction: row;
+
+  &:not(:last-child) {
+    margin: 0 0 60px 0;
+  }
+}
+
+.motto__text {
+  min-width: max-content;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 92px;
+  line-height: 92px;
+  color: $gray-light;
+  text-transform: lowercase;
+
+  &_black {
+    color: $black;
+  }
+
+  &:not(:last-child) {
+    margin: 0 60px 0 0;
+  }
+}
