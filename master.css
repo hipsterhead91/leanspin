@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url(c:\Users\tim\dev\practice\leanspin\normalize.css);
-.header, .intro, .help, .history, .partners, .features, .inspiration, .motto, .founders {
+.header, .intro, .help, .history, .partners, .features, .inspiration, .motto, .founders, .contacts, .footer {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14,7 +14,7 @@
           align-items: center;
 }
 
-.header__container, .intro__container, .help__container, .history__container, .partners__container, .features__container, .inspiration__container, .motto__container, .founders__container {
+.header__container, .intro__container, .help__container, .history__container, .partners__container, .features__container, .inspiration__container, .motto__container, .founders__container, .contacts__container, .footer__container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
@@ -1162,4 +1162,163 @@ main {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.contacts {
+  background-color: #000000;
+  padding: 98px 0 44px 0;
+}
+
+.contacts__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacts__note {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 34.2px;
+  letter-spacing: 0.44px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.contacts__contacts {
+  margin: 66px 0 144px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacts__contact {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 97.7px;
+  color: #FFFFFF;
+  text-transform: lowercase;
+  text-decoration: none;
+}
+
+.contacts__alignment {
+  width: 100%;
+  margin: 0 0 230px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacts__address {
+  max-width: 324px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 33.3px;
+  color: #FFFFFF;
+}
+
+.contacts__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contacts__button {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.contacts__button:not(:last-child) {
+  margin: 0 44px 0 0;
+}
+
+#facebook {
+  background-image: url("../../images/facebook.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#linkedin {
+  background-image: url("../../images/linkedin.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contacts__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contacts__copyright span {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16.9px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.contacts__copyright span:first-child {
+  margin: 0 86px 0 0;
+}
+
+.contacts__copyright span:last-child {
+  margin: 0 0 0 auto;
+}
+
+.footer__container {
+  padding-top: 44px;
+  padding-bottom: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__container p {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 59.3px;
+  color: #000000;
 }
