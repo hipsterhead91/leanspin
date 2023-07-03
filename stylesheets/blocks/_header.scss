@@ -1,19 +1,16 @@
 .header {
+  @extend %section;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  z-index: 100;
   background-color: $black;
 }
 
 .header__container {
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 1440px;
-  padding: 20px 72px 20px 56px;
+  @extend %section-container;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -21,12 +18,9 @@
 }
 
 .header__logo {
+  @include bg-image('../../images/logo.svg');
   width: 148px;
   height: 20px;
-  background-image: url("../../images/logo.svg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
   color: transparent;
 }
 

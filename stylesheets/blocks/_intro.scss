@@ -1,15 +1,10 @@
 .intro {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @extend %section;
   background-color: $black;
 }
 
-.intro-container {
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 1440px;
+.intro__container {
+  @extend %section-container;
   min-height: 800px;
   display: flex;
   flex-direction: column;
@@ -25,12 +20,9 @@
 }
 
 .intro__image {
+  @include bg-image('../../images/intro-image.png');
   width: 532px;
   height: 532px;
-  background-image: url("../../images/intro-image.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .intro__top-alignment {
@@ -39,7 +31,6 @@
   left: 50%;
   transform: translate(-52.5%, -55%);
   min-width: 940px;
-  min-height: 100px;
   display: flex;
   flex-direction: column;
 }
@@ -78,9 +69,8 @@
 }
 
 .intro__bottom {
-  box-sizing: border-box;
   width: 100%;
-  padding: 0 72px 0 72px;
+  min-height: 100px;
   margin: 40px 0 0 0;
   display: flex;
   flex-direction: row;

@@ -1,0 +1,67 @@
+.partners {
+  @extend %section;
+  margin-bottom: 114px;
+}
+
+.partners__container {
+  @extend %section-container;
+  display: flex;
+  flex-direction: column;
+}
+
+.partners__note {
+  @extend %note;
+}
+
+.partners__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-row-gap: 50px;
+}
+
+.partners__partner {
+  width: 100%;
+  min-height: 76px;
+  list-style: none;
+}
+
+#partner-01 {
+  @include bg-image('../../images/partner-admind.svg');
+}
+
+#partner-02 {
+  @include bg-image('../../images/partner-akat.svg');
+}
+
+#partner-03 {
+  @include bg-image('../../images/partner-corner.svg');
+}
+
+#partner-04 {
+  @include bg-image('../../images/partner-eacto.svg');
+}
+
+#partner-05 {
+  @include bg-image('../../images/partner-santander.svg');
+}
+
+#partner-06 {
+  @include bg-image('../../images/partner-setup.svg');
+}
+
+#partner-07 {
+  @include bg-image('../../images/partner-exso.svg');
+}
+
+#partner-08 {
+  @include bg-image('../../images/partner-alfa-net.svg');
+}
+
+#partner-09 {
+  @include bg-image('../../images/partner-tbm.svg');
+}
+
+#partner-10 {
+  @include bg-image('../../images/partner-brs.svg');
+}
+
